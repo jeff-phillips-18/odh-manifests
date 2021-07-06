@@ -28,3 +28,11 @@ rules:
     resources:
       - builds
       - buildconfigs
+  - apiGroups:
+      - image.openshift.io
+    verbs:
+      - get
+      - list
+      - watch
+    resources:
+      - imagestreams
