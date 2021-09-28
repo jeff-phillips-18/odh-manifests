@@ -4,6 +4,25 @@ metadata:
   name: rhods-dashboard
 rules:
   - apiGroups:
+      - dashboard.opendatahub.io
+    verbs:
+      - create
+      - get
+      - list
+      - patch
+    resources:
+      - odhapplications
+      - odhdocuments
+  - apiGroups:
+      - console.openshift.io
+    verbs:
+      - create
+      - get
+      - list
+      - patch
+    resources:
+      - odhquickstarts
+  - apiGroups:
       - route.openshift.io
     resources:
       - routes

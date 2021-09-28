@@ -3,6 +3,9 @@ kind: Kustomization
 resources:
 - namespace.yaml
 - operatorgroup.yaml
+- odhapplicationcrd.yaml
+- odhdocumentcrd.yaml
+- odhquickstartcrd.yaml
 namespace: opendatahub
 commonLabels:
   opendatahub.io/component: "true"
