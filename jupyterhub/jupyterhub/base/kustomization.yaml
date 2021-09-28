@@ -20,6 +20,10 @@ resources:
 - jupyterhub-spark-operator-configmap.yaml
 - jupyterhub-groups-configmap.yaml
 - jupyterhub-notebook-image-puller-rb.yaml
+- jupyterhub-app.yaml
+- jupyterhub-docs.yaml
+- quickstarts/create-jupyter-notebook-quickstart.yaml
+- quickstarts/deploy-python-model-quickstart.yaml
 - traefik-credentials-secret.yaml
 - traefik-configmap.yaml
 - traefik-deployment.yaml
@@ -34,7 +38,7 @@ commonLabels:
 
 configMapGenerator:
 - name: parameters
-  envs: 
+  envs:
     - params.env
 generatorOptions:
   disableNameSuffixHash: true
