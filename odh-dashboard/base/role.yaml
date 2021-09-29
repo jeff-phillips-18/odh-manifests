@@ -4,6 +4,25 @@ metadata:
   name: odh-dashboard
 rules:
   - apiGroups:
+      - dashboard.opendatahub.io
+    verbs:
+      - create
+      - get
+      - list
+      - patch
+    resources:
+      - odhapplications
+      - odhdocuments
+  - apiGroups:
+      - console.openshift.io
+    verbs:
+      - create
+      - get
+      - list
+      - patch
+    resources:
+      - odhquickstarts
+  - apiGroups:
       - route.openshift.io
     resources:
       - routes
@@ -20,11 +39,52 @@ rules:
       - list
       - watch
   - apiGroups:
+      - ''
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+    resources:
+      - configmaps
+      - secrets
+  - apiGroups:
+      - batch
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+    resources:
+      - cronjobs
+      - jobs
+      - jobs/status
+  - apiGroups:
+      - image.openshift.io
+    verbs:
+      - create
+      - get
+      - list
+      - patch
+      - delete
+    resources:
+      - imagestreams
+  - apiGroups:
       - build.openshift.io
     verbs:
       - get
       - list
       - watch
+      - create
+      - patch
+      - delete
     resources:
       - builds
       - buildconfigs
+      - buildconfigs/instantiate
