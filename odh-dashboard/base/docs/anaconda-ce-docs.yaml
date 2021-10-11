@@ -1,0 +1,128 @@
+apiVersion: dashboard.opendatahub.io/v1
+
+kind: OdhDocument
+metadata:
+  name: anaconda-background
+  annotations:
+    opendatahub.io/categories: 'AI/Machine learning,Getting started,Python,SciKit-Learn'
+spec:
+  type: tutorial
+  appName: anaconda-ce
+  displayName: What is Anaconda?
+  description: |-
+    Learn about the Anaconda Distrbution and why Python is so frequently used for data science tasks.
+  url: https://anaconda.org/training/anaconda_introduction/notebook
+  durationMinutes: 5
+---
+apiVersion: dashboard.opendatahub.io/v1
+
+kind: OdhDocument
+metadata:
+  name: python-accelerate-numba-tutorial
+  annotations:
+    opendatahub.io/categories: 'Python'
+spec:
+  type: tutorial
+  appName: anaconda-ce
+  displayName: Accelerating scientific workloads in Python with Numba
+  description: |-
+    Learn how to make your Python code run faster.
+  url: https://www.youtube.com/watch?v=6oXedk2tGfk
+  durationMinutes: 42
+---
+apiVersion: dashboard.opendatahub.io/v1
+
+kind: OdhDocument
+metadata:
+  name: python-effective-pandas-tutorial
+  annotations:
+    opendatahub.io/categories: 'AI/Machine learning,Data management,Jupyter notebook,Python'
+spec:
+  type: tutorial
+  appName: anaconda-ce
+  displayName: Data analysis in Python with Pandas
+  description: |-
+    Learn how to make effective use of pandas, a data analysis library for the Python programming language. This series is targeted at an intermediate level: people who have some experience with pandas, but are looking to improve.
+  url: https://github.com/TomAugspurger/effective-pandas
+  durationMinutes: 90
+---
+apiVersion: dashboard.opendatahub.io/v1
+
+kind: OdhDocument
+metadata:
+  name: python-gpu-numba-tutorial
+  annotations:
+    opendatahub.io/categories: 'AI/Machine learning,Jupyter notebook,Python'
+spec:
+  type: tutorial
+  appName: anaconda-ce
+  displayName: GPU Computing in Python with Numba
+  description: |-
+    Learn how to create GPU accelerated functions using Numba.
+  url: https://github.com/ContinuumIO/gtc2018-numba
+  durationMinutes: 90
+  featureFlag: gpu-computing
+---
+apiVersion: dashboard.opendatahub.io/v1
+
+kind: OdhDocument
+metadata:
+  name: python-interactive-visualization-tutorial
+  annotations:
+    opendatahub.io/categories: 'AI/Machine learning,Data visualization,Deployment,Jupyter notebook,Model serving,Python'
+spec:
+  type: tutorial
+  appName: anaconda-ce
+  displayName: Build interactive visualizations and dashboards in Python
+  description: |-
+    Explore data of many different types and sizes and learn to build simple and complex figures; work with billions of data points; add interactive behavior, widgets and controls; and deploy full dashboards and applications.
+  url: https://holoviz.org/tutorial/index.html
+  durationMinutes: 210
+---
+apiVersion: dashboard.opendatahub.io/v1
+
+kind: OdhDocument
+metadata:
+  name: python-scalable-computing-dask-tutorial
+  annotations:
+    opendatahub.io/categories: 'AI/Machine learning,Jupyter notebook,Python'
+spec:
+  type: tutorial
+  appName: anaconda-ce
+  displayName: Scalable computing in Python with Dask
+  description: |-
+    Learn about parallel data analysis with Dask, a parallel computing library that scales the existing Python ecosystem. This tutorial shows you how to analyze medium sized datasets in parallel.
+  url: https://tutorial.dask.org/
+  durationMinutes: 230
+---
+apiVersion: dashboard.opendatahub.io/v1
+
+kind: OdhDocument
+metadata:
+  name: python-scikit-learn-tutorial
+  annotations:
+    opendatahub.io/categories: 'AI/Machine learning,Jupyter notebook,Python,SciKit-Learn'
+spec:
+  type: tutorial
+  appName: anaconda-ce
+  displayName: Machine Learning in Python with Scikit-Learn
+  description: |-
+    Learn how to build machine learning models with scikit-learn for supervised learning, unsupervised learning, and classification problems.
+  url: https://scikit-learn.org/stable/tutorial/index.html
+  durationMinutes: 90
+---
+apiVersion: dashboard.opendatahub.io/v1
+
+kind: OdhDocument
+metadata:
+  name: python-visualization-tutorial
+  annotations:
+    opendatahub.io/categories: 'AI/Machine learning,Data visualization,Jupyter notebook,Python'
+spec:
+  type: tutorial
+  appName: anaconda-ce
+  displayName: Python tools for data visualization
+  description: |-
+    The PyViz.org website is an open platform for helping users decide on the best open-source (OSS) Python data visualization tools for their purposes, with links, overviews, comparisons, and examples.
+  url: https://pyviz.org
+  durationMinutes: 30
